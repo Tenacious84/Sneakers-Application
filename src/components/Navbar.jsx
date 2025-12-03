@@ -9,7 +9,7 @@ function Navbar() {
     }
 
     return (
-        <nav className='p-4 bg-black text-white flex justify-between'  ><Link to={'/'}>COMFORT WITH WORLD CLASS CHARISMA </Link>
+        <nav className='p-4 bg-black text-white flex justify-between'  ><Link to={'/'}><b>COMFORT WITH WORLD CLASS CHARISMA</b> </Link>
 
             <div className='flex gap-4'>
 
