@@ -16,16 +16,18 @@ export const signupUser = (data) => API.post("/users/signUp", data)
 // Products
 
 export const getProducts = () => API.get('/products')
-export const getProductsById = (id) => API.get(`/products/${id}`)
-
+export const getProductById = (id) => API.get(`/products/${id}`)
+export const createProduct = (data) => API.post('/products', data)
+export const updateProduct = (id, data) => API.put(`/products/${id}`, data)
+export const deleteProduct = (id) => API.delete(`/products/${id}`)
 // Orders
 
 export const createOrder = (data) => API.post('/order/createOrder', data)
 export const getOrders = () => API.get('/orders')
-
+export const getAllOrders = () => API.get('/orders')
 // Reviews
 
-export const getProductReviews = (pid) => API.get(`/review/${pid}`)
+export const getProductReviews = (id) => API.get(`/review/${id}`)
 
 
 
